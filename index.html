@@ -2,69 +2,78 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Jagadish Yadav | Power BI & Microsoft Fabric</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header class="nav">
-  <div class="brand">Jagadish Yadav</div>
-  <nav>
-    <a href="#about">About</a><a href="#services">Services</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
-  </nav>
+  <div class="container nav-inner">
+    <a class="brand" href="#home">Jagadish Yadav</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav-menu" id="navMenu">
+      <a href="#about">About</a><a href="#services">Services</a><a href="#projects">Projects</a>
+      <a href="#skills">Skills</a><a href="#contact">Contact</a>
+    </nav>
+  </div>
 </header>
 
+<main id="home">
 <section class="hero">
-  <div>
-    <p class="eyebrow">POWER BI • MICROSOFT FABRIC • DATA ANALYTICS</p>
-    <h1>Turning business data into <span>clear, actionable insights.</span></h1>
-    <p class="intro">I'm Jagadish Yadav, an Associate Data Analyst focused on Power BI dashboards, data modeling, DAX and Microsoft Fabric analytics solutions.</p>
-    <div class="buttons"><a class="btn primary" href="#projects">View Projects</a><a class="btn secondary" href="mailto:jagadishyadav193@gmail.com">Contact Me</a></div>
-    <div class="chips"><span>Power BI</span><span>Microsoft Fabric</span><span>SQL</span><span>DAX</span></div>
+  <div class="container"><div class="row hero-row">
+    <div class="col-12 col-lg-7 hero-content">
+      <p class="eyebrow">POWER BI • MICROSOFT FABRIC • DATA ANALYTICS</p>
+      <h1>Turning business data into <span>clear, actionable insights.</span></h1>
+      <p class="intro">I'm Jagadish Yadav, an Associate Data Analyst focused on Power BI dashboards, data modeling, DAX and Microsoft Fabric analytics solutions.</p>
+      <div class="buttons"><a class="btn primary" href="#projects">View Projects</a><a class="btn secondary" href="mailto:jagadishyadav193@gmail.com">Contact Me</a></div>
+      <div class="chips"><span>Power BI</span><span>Microsoft Fabric</span><span>SQL</span><span>DAX</span></div>
+    </div>
+    <div class="col-12 col-lg-5">
+      <div class="profile">
+        <img src="profile.jpg" alt="Jagadish Yadav">
+        <div class="profile-info"><strong>Jagadish Yadav</strong><small>Associate Data Analyst</small></div>
+      </div>
+    </div>
+  </div></div>
+</section>
+
+<section id="about" class="section"><div class="container">
+  <p class="eyebrow">ABOUT ME</p><h2>Data analytics with a business-first approach.</h2>
+  <p>I work on end-to-end analytics solutions, from data preparation and SQL to data modeling, DAX, visualization and dashboard development.</p>
+</div></section>
+
+<section id="services" class="section"><div class="container">
+  <p class="eyebrow">SERVICES</p><h2>How I can help</h2>
+  <div class="row grid">
+    <article class="col-12 col-md-6 col-lg-3"><h3>Power BI Dashboards</h3><p>Interactive KPI dashboards, drill-through reports, slicers, bookmarks and executive reporting.</p></article>
+    <article class="col-12 col-md-6 col-lg-3"><h3>DAX & Data Modeling</h3><p>Business measures, time intelligence, Top N analysis, star schemas and semantic models.</p></article>
+    <article class="col-12 col-md-6 col-lg-3"><h3>Microsoft Fabric</h3><p>Lakehouse, OneLake, Data Pipelines, Dataflows Gen2 and modern analytics concepts.</p></article>
+    <article class="col-12 col-md-6 col-lg-3"><h3>SQL & Analytics</h3><p>Reporting queries and analytics-ready datasets for BI solutions.</p></article>
   </div>
-  <div class="profile">
-    <img src="profile.jpg" alt="Jagadish Yadav">
-    <strong>Jagadish Yadav</strong><small>Associate Data Analyst</small>
+</div></section>
+
+<section id="projects" class="section"><div class="container">
+  <p class="eyebrow">SELECTED PROJECTS</p><h2>Analytics projects</h2>
+  <div class="row projects">
+    <article class="col-12 col-lg-4"><b>01</b><h3>Sales Performance Dashboard</h3><p>Currency conversion, unit-of-measure handling, Top N analysis, KPIs and geographic insights.</p><div class="tags">Power BI · DAX · Power Query</div></article>
+    <article class="col-12 col-lg-4"><b>02</b><h3>Financial Analytics Dashboard</h3><p>Profit & Loss, Balance Sheet, Cash Flow, Accounts Receivable, Accounts Payable and Cash & Bank analysis.</p><div class="tags">SQL · Power BI · Data Modeling</div></article>
+    <article class="col-12 col-lg-4"><b>03</b><h3>CFO Analytics Dashboard</h3><p>Executive financial insights with KPI monitoring, forecasting concepts and anomaly-focused reporting.</p><div class="tags">Power BI · Analytics · Forecasting</div></article>
   </div>
-</section>
+</div></section>
 
-<section id="about" class="section">
-<p class="eyebrow">ABOUT ME</p><h2>Data analytics with a business-first approach.</h2>
-<p>I work on end-to-end analytics solutions, from data preparation and SQL to data modeling, DAX, visualization and dashboard development.</p>
-</section>
+<section id="skills" class="section"><div class="container">
+  <p class="eyebrow">SKILLS</p><h2>Technology stack</h2>
+  <div class="skill-list"><span>Power BI</span><span>Microsoft Fabric</span><span>SQL</span><span>DAX</span><span>Power Query</span><span>Excel</span><span>Python</span><span>PySpark</span><span>Data Modeling</span><span>Dataflows Gen2</span><span>Data Pipelines</span><span>Lakehouse</span></div>
+</div></section>
 
-<section id="services" class="section">
-<p class="eyebrow">SERVICES</p><h2>How I can help</h2>
-<div class="grid">
-<article><h3>Power BI Dashboards</h3><p>Interactive KPI dashboards, drill-through reports, slicers, bookmarks and executive reporting.</p></article>
-<article><h3>DAX & Data Modeling</h3><p>Business measures, time intelligence, Top N analysis, star schemas and semantic models.</p></article>
-<article><h3>Microsoft Fabric</h3><p>Lakehouse, OneLake, Data Pipelines, Dataflows Gen2 and modern analytics concepts.</p></article>
-<article><h3>SQL & Analytics</h3><p>Reporting queries and analytics-ready datasets for BI solutions.</p></article>
-</div>
-</section>
-
-<section id="projects" class="section">
-<p class="eyebrow">SELECTED PROJECTS</p><h2>Analytics projects</h2>
-<div class="projects">
-<article><b>01</b><h3>Sales Performance Dashboard</h3><p>Currency conversion, unit-of-measure handling, Top N analysis, KPIs and geographic insights.</p><div class="tags">Power BI · DAX · Power Query</div></article>
-<article><b>02</b><h3>Financial Analytics Dashboard</h3><p>Profit & Loss, Balance Sheet, Cash Flow, Accounts Receivable, Accounts Payable and Cash & Bank analysis.</p><div class="tags">SQL · Power BI · Data Modeling</div></article>
-<article><b>03</b><h3>CFO Analytics Dashboard</h3><p>Executive financial insights with KPI monitoring, forecasting concepts and anomaly-focused reporting.</p><div class="tags">Power BI · Analytics · Forecasting</div></article>
-</div>
-</section>
-
-<section id="skills" class="section">
-<p class="eyebrow">SKILLS</p><h2>Technology stack</h2>
-<div class="skill-list"><span>Power BI</span><span>Microsoft Fabric</span><span>SQL</span><span>DAX</span><span>Power Query</span><span>Excel</span><span>Python</span><span>PySpark</span><span>Data Modeling</span><span>Dataflows Gen2</span><span>Data Pipelines</span><span>Lakehouse</span></div>
-</section>
-
-<section id="contact" class="contact">
-<p class="eyebrow">CONTACT</p><h2>Let's build something useful with your data.</h2>
-<p>Available for Power BI, Microsoft Fabric and data analytics projects.</p>
-<div class="contact-links">
-<a href="mailto:jagadishyadav193@gmail.com">✉ jagadishyadav193@gmail.com</a>
-<a href="https://www.linkedin.com/in/jagadish-yadav-udhari-30494a225/" target="_blank" rel="noopener">in LinkedIn Profile</a>
-</div>
-</section>
+<section id="contact" class="contact"><div class="container">
+  <p class="eyebrow">CONTACT</p><h2>Let's build something useful with your data.</h2>
+  <p>Available for Power BI, Microsoft Fabric and data analytics projects.</p>
+  <div class="contact-links"><a href="mailto:jagadishyadav193@gmail.com">✉ jagadishyadav193@gmail.com</a><a href="https://www.linkedin.com/in/jagadish-yadav-udhari-30494a225/" target="_blank" rel="noopener">in LinkedIn Profile</a></div>
+</div></section>
+</main>
 <footer>© 2026 Jagadish Yadav • Power BI & Microsoft Fabric</footer>
 <script src="script.js"></script>
 </body></html>
